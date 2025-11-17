@@ -13,17 +13,21 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class ScoreActivity extends AppCompatActivity {
-    private TextView tvnum10, tvnum11;
+    private TextView tvnum10, tvnum11, tvName;
     private Button btnBack;
-    private Intent intent;
+    private Intent intent, receiver;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score);
         tvnum10 = findViewById(R.id.textView7);
         tvnum11= findViewById(R.id.textView8);
+        tvName= findViewById(R.id.namename);
         btnBack = findViewById(R.id.button4);
         intent = new Intent(ScoreActivity.this, MainActivity.class);
+        receiver = getIntent();
+        String name =receiver.getStringExtra("NAME");
+        tvName.setText(name);
         tvnum10.setText("Num of games :"+MainActivity.game);
         tvnum11.setText("Num of games :"+MainActivity.correct);
 

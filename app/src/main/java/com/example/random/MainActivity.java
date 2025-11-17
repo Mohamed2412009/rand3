@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +16,9 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     private Button start, new1, btnScore;
+
+
+    private EditText name;
     private TextView tvnum, tvnum2, tvnum3, tvnum4, tvnum5, tvnum6, tvnum7, tvnum8;
     private int a1, a2, a3, a4, a5, a6, n = 0 , x=0;
     private boolean isRunning = false;
@@ -39,8 +43,10 @@ public class MainActivity extends AppCompatActivity {
         tvnum6 = findViewById(R.id.textView6);
         tvnum7 = findViewById(R.id.textViewR);
         tvnum8 = findViewById(R.id.textViewOf);
+        name = findViewById(R.id.textView9);
         btnScore = findViewById(R.id.button3);
         score = new Intent(MainActivity.this, ScoreActivity.class);
+
 
 
         new1.setOnClickListener(v -> {
@@ -151,6 +157,7 @@ public class MainActivity extends AppCompatActivity {
         btnScore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                score.putExtra("NAME",name.getText().toString());
 
                 startActivity(score);
             }

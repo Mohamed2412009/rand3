@@ -69,6 +69,11 @@
             android:textSize="50dp"
             android:gravity="center" />
     </LinearLayout>
+    <EditText
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="What is your Name?" />
     <TextView
         android:id="@+id/textViewR"
         android:layout_width="match_parent"
@@ -110,4 +115,6 @@
         android:layout_height="wrap_content"
         android:text="Score" />
     </LinearLayout>
+
+
 </LinearLayout>
