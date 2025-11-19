@@ -20,10 +20,10 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="315dp"
-        android:layout_height="221dp"
-        android:layout_marginTop="368dp"
-        android:layout_marginEnd="56dp"
+        android:layout_width="336dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="32dp"
         android:text="correct :"
         android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,8 +33,8 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="80dp"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -49,4 +49,6 @@
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

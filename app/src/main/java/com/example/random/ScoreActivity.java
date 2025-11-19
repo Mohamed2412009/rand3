@@ -40,6 +40,8 @@ public class ScoreActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 startActivity(intent);
+                finish();
+                System.exit(0);
             }
         });
 
